@@ -18,6 +18,18 @@ app.get("/about", function (req, res) {
   res.render("about");
 });
 
+app.get("/faq", function (req, res) {
+  res.render("faq");
+});
+
+app.get("/services", function (req, res) {
+  res.render("services");
+});
+
+app.get("/contact", function (req, res) {
+  res.render("contact");
+});
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
